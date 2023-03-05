@@ -1,4 +1,4 @@
-export class WebApplications {
+export class WebApplication {
   title: string;
   url: string;
   description: string;

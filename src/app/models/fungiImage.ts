@@ -1,4 +1,4 @@
-export class FungiImages {
+export class FungiImage {
   imageUrl: string;
   name: string;
 

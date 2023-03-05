@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {PersoService} from "../perso.service";
-import {Goals} from "../goals";
+import {Goals} from "../models/goals";
 
 @Component({
   selector: 'app-goals',

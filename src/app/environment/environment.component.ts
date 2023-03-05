@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {PersoService} from "../perso.service";
-import {Environment} from "../environment";
+import {Environment} from "../models/environment";
 
 @Component({
   selector: 'app-environment',

@@ -1,4 +1,4 @@
-import {Goals} from "./goals";
+import {Goals} from "../models/goals";
 
 export const GOALS: Goals =
   {

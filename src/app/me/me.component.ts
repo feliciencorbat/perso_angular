@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {PersoService} from "../perso.service";
-import {Me} from "../me";
+import {Me} from "../models/me";
 
 @Component({
   selector: 'app-me',

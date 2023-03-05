@@ -1,4 +1,4 @@
-import {Me} from "./me";
+import {Me} from "../models/me";
 
 export const ME: Me =
   {
