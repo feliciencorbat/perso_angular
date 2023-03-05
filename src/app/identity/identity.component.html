@@ -2,23 +2,22 @@
     <div class="row">
         <div class="col-md-8">
             <!-- Heading doc: https://getbootstrap.com/docs/5.3/content/typography/#customizing-headings -->
-            <h1>Félicien Corbat<small class="text-muted"> (felicien)</small></h1>
+            <h1>{{ identity.name }}<small class="text-muted"> ({{ identity.username }})</small></h1>
             <!-- Blockquote doc: https://getbootstrap.com/docs/5.3/content/typography/#blockquotes -->
             <figure class="p-3">
                 <blockquote class="blockquote">
-                    <p>Ne suffit-il pas de voir qu'un jardin est beau,<br>
-                        sans qu'il faille aussi croire à la présence de fées au fond de ce jardin ?
+                    <p>
+                      {{ identity.citation }}
                     </p>
                 </blockquote>
                 <figcaption class="blockquote-footer">
-                    Richard Dawkins dans <cite title="Source Title">Pour en finir avec Dieu
-                    (2008)</cite>
+                    {{ identity.citationAuthor}} dans <cite title="Source Title">{{ identity.citationBook }}</cite>
                 </figcaption>
             </figure>
         </div>
         <div class="col-md-4">
             <!-- Image doc: https://getbootstrap.com/docs/5.3/content/images/#image-thumbnails -->
-            <img src="../../assets/images/felicien.jpg" class="img-fluid img-thumbnail rounded h-100"
+            <img [src]="identity.profilePhotoUrl" class="img-fluid img-thumbnail rounded h-100"
                  alt="profile">
         </div>
     </div>

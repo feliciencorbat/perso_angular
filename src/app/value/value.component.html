@@ -1,15 +1,11 @@
 <div class="container">
     <h1>Valeur et utilité</h1>
     <ul class="list-group">
-        <li class="list-group-item">Passionné</li>
-        <li class="list-group-item">Honnête</li>
-        <li class="list-group-item">Endurant dans l'effort</li>
-        <li class="list-group-item">Autodidacte</li>
-        <li class="list-group-item">Factuel (non croyant)</li>
+        <li *ngFor="let val of value.values" class="list-group-item">
+          {{ val }}
+        </li>
     </ul>
     <p class="mt-3">
-        Par rapport à mes caractéristiques, je souhaiterais travailler dans une entreprise qui a du sens pour moi et 
-        qui a une vision de développement durable. Les domaines de la finance, de l'assurance ou du marketing de m'attirent pas. 
-        Pour le reste, je suis ouvert à une entreprise, qu'elle soit du public ou du privé.
+      {{ value.comment }}
     </p>
 </div>
