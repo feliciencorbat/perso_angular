@@ -1,1 +1,50 @@
-<p>me works!</p>
+<div class="container">
+  <h1>Moi, mon personnage</h1>
+  <h2>Qui êtes-vous ?</h2>
+  <div [innerHtml]= "me.whoAmI"></div>
+
+  <h4>Quelques photos de champignons et myxomycètes</h4>
+
+  <div class="row">
+    <div *ngFor="let fungiImage of me.fungiImages" class="col-md-4">
+      <div class="thumbnail">
+        <a [href]="fungiImage.imageUrl" data-toggle="lightbox">
+          <img [src]="fungiImage.imageUrl" alt="{{ fungiImage.name }}"
+               style="width:100%">
+          <div class="caption">
+            <p>{{ fungiImage.name }}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <h2>Avec quoi venez-vous ?</h2>
+  <p>{{ me.knowledges }}</p>
+
+  <h3>Quelques applications web réalisées</h3>
+  <div class="container">
+    <div class="row">
+
+      <div *ngFor="let webApplication of me.webApplications" class="col-lg-4 col-md-6 mb-3">
+        <!-- Card doc: https://getbootstrap.com/docs/5.3/components/card/#images -->
+        <div class="card" style="width: 18rem;">
+          <a [href]="webApplication.url">
+            <img [src]="webApplication.snapshot" class="card-img-top" alt="{{ webApplication.title }}">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">{{ webApplication.title }}</h5>
+            <p class="card-text">{{ webApplication.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2>Comment j'aimerais terminer cette formation ?</h2>
+  <div [innerHtml]= "me.howToEnd"></div>
+
+  <h2>Qui je serai et avec quoi je finirai ?</h2>
+  <p>{{ me.future }}</p>
+</div>
