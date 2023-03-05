@@ -9,8 +9,7 @@
     <div *ngFor="let fungiImage of me.fungiImages" class="col-md-4">
       <div class="thumbnail">
         <a [href]="fungiImage.imageUrl" data-toggle="lightbox">
-          <img [src]="fungiImage.imageUrl" alt="{{ fungiImage.name }}"
-               style="width:100%">
+          <img [src]="fungiImage.imageUrl" alt="{{ fungiImage.name }}" appSetElementWithMouse>
           <div class="caption">
             <p>{{ fungiImage.name }}</p>
           </div>
@@ -28,7 +27,7 @@
 
       <div *ngFor="let webApplication of me.webApplications" class="col-lg-4 col-md-6 mb-3">
         <!-- Card doc: https://getbootstrap.com/docs/5.3/components/card/#images -->
-        <div class="card" style="width: 18rem;">
+        <div class="card" appSetElementWithMouse>
           <a [href]="webApplication.url">
             <img [src]="webApplication.snapshot" class="card-img-top" alt="{{ webApplication.title }}">
           </a>

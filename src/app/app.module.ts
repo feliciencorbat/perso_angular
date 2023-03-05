@@ -9,6 +9,7 @@ import { GoalsComponent } from './goals/goals.component';
 import { EnvironmentComponent } from './environment/environment.component';
 import { ValueComponent } from './value/value.component';
 import { MeComponent } from './me/me.component';
+import { SetElementWithMouseDirective } from './set-element-with-mouse.directive';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { MeComponent } from './me/me.component';
     GoalsComponent,
     EnvironmentComponent,
     ValueComponent,
-    MeComponent
+    MeComponent,
+    SetElementWithMouseDirective
   ],
   imports: [
     BrowserModule,
