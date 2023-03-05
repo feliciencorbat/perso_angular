@@ -6,17 +6,8 @@
             <div class="card">
                 <h5 class="card-header text-bg-success">Forces</h5>
                 <div class="card-body">
-                  <p class="card-text">
-                    Connaissances préalables en développement
-                  </p>
-                  <p class="card-text">
-                    Facilités d'intégration sociale
-                  </p>
-                  <p class="card-text">
-                    Facilités "scolaires"
-                  </p>
-                  <p class="card-text">
-                    Motivé et passionné
+                  <p *ngFor="let strength of goals.strengths" class="card-text">
+                    {{ strength }}
                   </p>
                 </div>
             </div>
@@ -26,17 +17,8 @@
             <div class="card">
                 <h5 class="card-header text-bg-primary">Faiblesses</h5>
                 <div class="card-body">
-                  <p class="card-text">
-                    Rythme de travail faible précédemment
-                  </p>
-                  <p class="card-text">
-                    Sensibilités sensorielles excessives
-                  </p>
-                  <p class="card-text">
-                    Besoins de "calme"
-                  </p>
-                  <p class="card-text">
-                    Peu à l'écoute de moi-même
+                  <p *ngFor="let weakness of goals.weaknesses" class="card-text">
+                    {{ weakness }}
                   </p>
                 </div>
             </div>
@@ -48,12 +30,9 @@
             <div class="card">
                 <h5 class="card-header text-bg-warning">Opportunités</h5>
                 <div class="card-body">
-                    <p class="card-text">
-                        Profiter de consolider et augmenter les connaissances
-                    </p>
-                    <p class="card-text">
-                        Avoir des contacts pour un futur job
-                    </p>
+                  <p *ngFor="let opportunity of goals.opportunities" class="card-text">
+                    {{ opportunity }}
+                  </p>
                 </div>
             </div>
         </div>
@@ -62,11 +41,8 @@
             <div class="card">
                 <h5 class="card-header text-bg-danger">Menaces</h5>
                 <div class="card-body">
-                    <p class="card-text">
-                        Menace de surcharge sensorielle - Burn-out
-                    </p>
-                    <p class="card-text">
-                        
+                  <p *ngFor="let threat of goals.threats" class="card-text">
+                    {{ threat }}
                   </p>
                 </div>
             </div>
