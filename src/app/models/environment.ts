@@ -1,3 +1,6 @@
+/**
+ * Model class for component environment
+ */
 export class Environment {
   intro: string;
   environmental: string;

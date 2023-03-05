@@ -1,5 +1,8 @@
 import {Directive, ElementRef, HostListener, Input} from '@angular/core';
 
+/**
+ * Directive which add color border for elements when mouse enter
+ */
 @Directive({
   selector: '[appSetElementWithMouse]'
 })
@@ -12,7 +15,7 @@ export class SetElementWithMouseDirective {
     this.setBorderColor(this.initialColor);
   }
 
-  @Input('pkmnBorderCard') borderColor: string; //avec alias
+  @Input('appSetElementWithMouse') borderColor: string; //avec alias
 
   @HostListener('mouseenter') onMouseEnter() {
     this.setBorderColor(this.borderColor || this.defaultColor);

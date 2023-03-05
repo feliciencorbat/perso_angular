@@ -1,3 +1,6 @@
+/**
+ * Model class for component goals
+ */
 export class Goals {
   strengths: string[];
   weaknesses: string[];

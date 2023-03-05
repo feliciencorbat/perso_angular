@@ -1,3 +1,6 @@
+/**
+ * Model class for component identity
+ */
 export class Identity {
   name: string;
   username: string;

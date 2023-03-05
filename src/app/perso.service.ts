@@ -10,6 +10,9 @@ import {VALUE} from "./mock-data/mock-value";
 import {Me} from "./models/me";
 import {ME} from "./mock-data/mock-me";
 
+/**
+ * Service which returns mock data in components
+ */
 @Injectable({
   providedIn: 'root'
 })

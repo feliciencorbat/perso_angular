@@ -95,7 +95,7 @@ export const ME: Me =
       "performant et réutilisable sur le long terme. Je souhaiterais me spécialiser en backend et typiquement \n" +
       "réaliser un projet avec le framework Laravel que je ne connais pas. J'ai uniquement utilisé Symfony. \n" +
       "Je souhaite par contre aussi avoir une vision globale et utiliser également des frameworks frontend.\n" +
-      "Je souhaiterais utiliser VueJS car je n'ai utilisé jusqu'à maintenant que ReactJS.\n" +
+      "Je souhaiterais utiliser Angular car je n'ai utilisé jusqu'à maintenant que ReactJS.\n" +
       "</p>\n" +
       "<p>\n" +
       "Je souhaiterais également terminer avec un job dans le développement backend dans une entreprise qui me correspond.\n" +
