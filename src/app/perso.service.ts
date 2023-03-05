@@ -5,6 +5,8 @@ import {Goals} from "./goals";
 import {GOALS} from "./mock-goals";
 import {ENVIRONMENT} from "./mock-environment";
 import {Environment} from "./environment";
+import {Value} from "./value";
+import {VALUE} from "./mock-value";
 
 @Injectable({
   providedIn: 'root'
@@ -21,5 +23,9 @@ export class PersoService {
 
   getEnvironment(): Environment {
     return ENVIRONMENT;
+  }
+
+  getValue(): Value {
+    return VALUE;
   }
 }
