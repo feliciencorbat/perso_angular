@@ -10,6 +10,7 @@ import { EnvironmentComponent } from './environment/environment.component';
 import { ValueComponent } from './value/value.component';
 import { MeComponent } from './me/me.component';
 import { SetElementWithMouseDirective } from './set-element-with-mouse.directive';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SetElementWithMouseDirective } from './set-element-with-mouse.directive
     EnvironmentComponent,
     ValueComponent,
     MeComponent,
-    SetElementWithMouseDirective
+    SetElementWithMouseDirective,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

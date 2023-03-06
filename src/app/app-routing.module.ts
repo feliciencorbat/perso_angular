@@ -4,6 +4,7 @@ import { EnvironmentComponent } from './environment/environment.component';
 import { GoalsComponent } from './goals/goals.component';
 import { IdentityComponent } from './identity/identity.component';
 import { MeComponent } from './me/me.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ValueComponent } from './value/value.component';
 
 const routes: Routes = [
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: "value", component: ValueComponent },
   { path: "me", component: MeComponent },
   { path: "", redirectTo: "identity", pathMatch: 'full' },
+  { path: '**', component: PageNotFoundComponent },
 ];
 
 @NgModule({
