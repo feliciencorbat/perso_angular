@@ -1,6 +1,20 @@
-# PersoAngular
+# Projet personnel Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
+## Frameworks et librariries utilisés:
+
+Angular 15.2
+
+ng-bootstrap: 14.0
+
+Bootstrap 5.2
+
+Bootstrap-icons 1.10
+
+angular-cli-ghpages 1.0.5
+
+## Github Pages
+
+Run `ng deploy --base-href=/perso_angular/`
 
 ## Development server
 
